@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/lynnco/lita-timecard.png?branch=master)](https://travis-ci.org/lynnco/lita-timecard)
 [![Coverage Status](https://coveralls.io/repos/lynnco/lita-timecard/badge.png)](https://coveralls.io/r/lynnco/lita-timecard)
 
-TODO: Add a description of the plugin.
+Allows users to create timecard with entries like 10m, 2h
 
 ## Installation
 
