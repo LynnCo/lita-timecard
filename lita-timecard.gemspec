@@ -1,12 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-timecard"
   spec.version       = "0.1.0"
-  spec.authors       = ["Lynn Cyrin"]
-  spec.email         = ["firemagelynn@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.authors       = ["Lynn 'Cyrin' Conway"]
+  spec.email         = ["lynncyrin@gmail.com"]
+  spec.description   = "Timecards for Lita"
+  spec.summary       = "Allows users to create timecard with entries like 10m, 2h"
+  spec.homepage      = "https://github.com/LynnCo/lita-timecard"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
@@ -16,11 +16,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "lita", ">= 4.7"
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "pry-byebug"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rack-test"
-  spec.add_development_dependency "rspec", ">= 3.0.0"
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "bundler"
 end
