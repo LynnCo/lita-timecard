@@ -15,8 +15,15 @@ gem "lita-timecard"
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+Add the name of the user providing support for this plugin to lita_config.rb:
+
+``` ruby
+ config.handlers.timecard.support: "@cyrin"
+```
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+```
+@lita timecard 30m worked on lita-timecard
+@lita timecard 1h worked on lita-timecard
+```
