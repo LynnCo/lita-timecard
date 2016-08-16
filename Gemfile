@@ -9,7 +9,6 @@ group :development do
   gem "rack-test"
   gem "rake"
   gem "rspec"
-  gem "simplecov"
 end
 
 # This fixes `already initialized constant` warnings while running commands
