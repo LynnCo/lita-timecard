@@ -3,17 +3,17 @@ module Lita
     class Timecard < Handler
       config :support
 
-      route %r{^timecard (\d+)(?:h|hr|hour)}i,
+      route %r{^timecard (\d+)\s*h}i,
         :add_hours, command: true
 
-      # route %r{^timecard (\d+)(?:m|min|minute)}i,
-      #   :add_minutes, command: true,
+      route %r{^timecard (\d+)\s*m}i,
+        :add_minutes, command: true
 
-      # route %r{^timecard (\d+)(.*)}i,
-      #   :error_time_format, command: true,
+      route %r{^timecard (\d+)(.*)}i,
+        :error_time_format, command: true
 
-      # route %r{^timecard (.*)}i,
-      #   :error_unknown_command, command: true,
+      route %r{^timecard (.*)}i,
+        :error_unknown_command, command: true
 
       # def add_hours(response)
       #   add_time(response, response.matches(1).to_i*60)
