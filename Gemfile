@@ -8,9 +8,8 @@ group :development do
   gem "pry-byebug"
   gem "rack-test"
   gem "rake"
-  gem "rspec", "~> 3.4"
+  gem "rspec"
   gem "simplecov"
-  gem "webmock"
 end
 
 # This fixes `already initialized constant` warnings while running commands
