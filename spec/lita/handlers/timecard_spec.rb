@@ -13,9 +13,9 @@ describe Lita::Handlers::Timecard, lita_handler: true do
     "timecard 2 m"        => :add_minutes,
     "timecard 2mins"      => :add_minutes,
     "timecard 2minutes"   => :add_minutes,
-    "timecard 2n"         => :error_time_format,
-    "timecard 2cat"       => :error_time_format,
-    "timecard cat"        => :error_unknown_command,
+    # "timecard 2n"         => :error_time_format,
+    # "timecard 2cat"       => :error_time_format,
+    # "timecard cat"        => :error_unknown_command,
   }.each do |command, method|
     it { is_expected.to route_command(command).to(method) }
   end

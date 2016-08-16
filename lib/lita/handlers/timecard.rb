@@ -9,11 +9,11 @@ module Lita
       route %r{^timecard (\d+)\s*m}i,
         :add_minutes, command: true
 
-      route %r{^timecard (\d+)(.*)}i,
-        :error_time_format, command: true
+      # route %r{^timecard (\d+)(.*)}i,
+      #   :error_time_format, command: true
 
-      route %r{^timecard (.*)}i,
-        :error_unknown_command, command: true
+      # route %r{^timecard (.*)}i,
+      #   :error_unknown_command, command: true
 
       def add_hours(response)
         add_time(response, response.matches[1].to_f)
