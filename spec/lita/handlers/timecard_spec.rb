@@ -20,4 +20,11 @@ describe Lita::Handlers::Timecard, lita_handler: true do
     it { is_expected.to route_command(command).to(method) }
   end
 
+  it "echoes back to the user when new entries are created" do
+    activity = "lita-timecard"
+    time_spent = "1h"
+    send_message("@lita timecard #{time_spent} #{activity}")
+    expect(replies.last).to eq("#{user.name} logged! (#{time_spent}) work on (#{activity})")
+  end
+
 end
