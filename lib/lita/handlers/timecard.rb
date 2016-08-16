@@ -31,10 +31,6 @@ module Lita
         response.reply("logged! (#{time_spent}) work on (activity)")
       end
 
-      def error_time_format(response)
-        error(response, "#{response.matches[1]} is an invalid time format")
-      end
-
       def error_unknown_command(response)
         error(response, "#{response.message.body} is not a valid command")
       end
