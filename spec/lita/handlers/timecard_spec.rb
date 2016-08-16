@@ -21,10 +21,8 @@ describe Lita::Handlers::Timecard, lita_handler: true do
   end
 
   it "echoes back to the user when new entries are created" do
-    activity = "lita-timecard"
-    time_spent = "1h"
-    send_message("@lita timecard #{time_spent} #{activity}")
-    expect(replies.last).to eq("#{user.name} logged! (#{time_spent}) work on (#{activity})")
+    send_message("@lita timecard 1h lita-timecard")
+    expect(replies.last).to eq("logged! (1.0 hours) work on (lita-timecard)")
   end
 
 end
