@@ -4,7 +4,7 @@ gemspec
 
 group :development do
   gem "coveralls", require: false
-  gem "guard-rspec"
+  gem "guard-rspec", require: false
   gem "pry-byebug"
   gem "rack-test"
   gem "rake"
